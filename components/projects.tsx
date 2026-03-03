@@ -15,23 +15,20 @@ const projects = [
   },
   {
     title: "SODA",
-    subtitle: "Proyecto final DAW · Full Stack",
+    subtitle: "Proyecto Final DAW · Plataforma de Inversiones en Tiempo Real",
     description:
-      "Aplicacion web full-stack desarrollada como proyecto final de grado. Arquitectura moderna con React y Next.js en el frontend, gestion de estado con TypeScript y estructura preparada para escalabilidad. Enfoque en buenas practicas, rendimiento y arquitectura limpia.",
-    tags: ["Next.js", "React", "TypeScript", "Node.js", "Full Stack"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/DaneteeMP",
+      "Simulación de plataforma de inversiones conectada en tiempo real a datos de mercado de acciones. Arquitectura full-stack con Next.js y TypeScript en el frontend, backend con Node.js y sistema de cacheo con Redis para optimizar consultas. Despliegue containerizado con Docker y orquestado con Kubernetes, incluyendo configuración de entorno productivo, gestión de pods y servicios. Implementación de actualizaciones en tiempo real y enfoque en escalabilidad, rendimiento y arquitectura desacoplada.",
+    tags: ["Next.js", "TypeScript", "Node.js", "Express", "Redis", "Docker", "Kubernetes"],
+    liveUrl: "https://github.com/DaneteeMP/SODA",
     image: "/images/soda.webp",
     color: "from-accent/20 to-secondary",
   },
   {
-    title: "ProjectM (SMYR)",
-    subtitle: "Plataforma multi-vendedor WordPress",
+    title: "ProjectM",
+    subtitle: "Proyecto Final SMR · Plataforma Multi-Vendedor",
     description:
-      "Plataforma desarrollada con WordPress que permitia a los usuarios crear sus propias tiendas dentro del sistema para la compraventa, exportacion e importacion de vehiculos y piezas. Gestion de roles, publicaciones personalizadas y estructura multi-vendedor.",
-    tags: ["WordPress", "PHP", "Custom Post Types", "Multi Vendor", "MySQL"],
-    liveUrl: "#",
-    githubUrl: "https://github.com/DaneteeMP",
+      "Plataforma multi-vendedor desarrollada con WordPress que permitía a los usuarios crear sus propias tiendas para la compraventa, exportación e importación de vehículos y piezas. Desarrollo completo de la infraestructura: configuración de red, segmentación con DMZ, gestión de DNS, reglas de firewall y administración del servidor. Implementación de roles personalizados, Custom Post Types y estructura escalable orientada a múltiples vendedores.",
+    tags: ["WordPress", "PHP", "Infraestructura", "DNS", "Firewall"],
     image: "/images/projectm.webp",
     color: "from-secondary to-primary/10",
   },
@@ -105,24 +102,29 @@ export function Projects() {
                   </div>
 
                   <div className="mt-7 flex items-center gap-5">
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group/link inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground shadow-md shadow-primary/15 transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
-                    >
-                      Ver proyecto
-                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
-                    >
-                      <Github className="h-4 w-4" />
-                      Codigo
-                    </a>
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group/link inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground shadow-md shadow-primary/15 transition-all hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5"
+                      >
+                        Ver proyecto
+                        <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5" />
+                      </a>
+                    )}
+
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+                      >
+                        <Github className="h-4 w-4" />
+                        Código
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

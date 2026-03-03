@@ -26,7 +26,7 @@ export function Header() {
   }, [])
 
   // Escoge el logo según el tema
-  const logoSrc = theme === "white" ? "/images/dm.webp" : "/images/dm-white.webp"
+  const logoSrc = theme === "light" ? "/images/dm.webp" : "/images/dm-white.webp"
 
   return (
     <header

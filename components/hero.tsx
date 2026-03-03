@@ -7,7 +7,7 @@ const techFloating = [
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 mt-10">
+    <section className="relative flex min-h-screen flex-col justify-center overflow-hidden px-6 mt-[2%]">
       {/* Decorative pastel shapes */}
       <div className="pointer-events-none absolute -top-32 -right-32 h-[500px] w-[500px] rounded-full bg-primary/8 blur-[100px]" />
       <div className="pointer-events-none absolute -bottom-20 -left-40 h-[400px] w-[400px] rounded-full bg-accent/40 blur-[100px]" />
