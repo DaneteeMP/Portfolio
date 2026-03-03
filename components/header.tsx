@@ -17,7 +17,7 @@ const navLinks = [
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
-  const { theme } = useTheme() // <- hook para detectar el tema
+  const { theme } = useTheme() 
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50)
@@ -26,7 +26,7 @@ export function Header() {
   }, [])
 
   // Escoge el logo según el tema
-  const logoSrc = theme === "dark" ? "/images/dm-white.webp" : "/images/dm.png"
+  const logoSrc = theme === "white" ? "/images/dm.webp" : "/images/dm-white.webp"
 
   return (
     <header

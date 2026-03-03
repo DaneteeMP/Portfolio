@@ -10,7 +10,7 @@ const projects = [
     tags: ["WordPress", "WooCommerce", "PHP", "SEO", "Web Performance"],
     liveUrl: "https://calcetinesgolosos.com",
     githubUrl: "#",
-    image: "/images/calcetinesgolosos.png",
+    image: "/images/calcetinesgolosos.webp",
     color: "from-primary/10 to-accent/20",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     tags: ["WordPress", "PHP", "Custom Post Types", "Multi Vendor", "MySQL"],
     liveUrl: "#",
     githubUrl: "https://github.com/DaneteeMP",
-    image: "/images/projectm.png",
+    image: "/images/projectm.webp",
     color: "from-secondary to-primary/10",
   },
 ]
