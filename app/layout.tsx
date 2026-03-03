@@ -12,11 +12,10 @@ export const metadata: Metadata = {
   description: 'Portafolio de Dan Maldonado. Desarrollador Full Stack con experiencia en React, Next.js, Laravel, Django, Node.js y mas.',
   icons: {
     icon: [
-      { url: '/icon-light-32x32.png', media: '(prefers-color-scheme: light)' },
-      { url: '/icon-dark-32x32.png', media: '(prefers-color-scheme: dark)' },
+      { url: '/images/dm-white.webp', media: '(prefers-color-scheme: light)' },
+      { url: '/dm-icon.png', media: '(prefers-color-scheme: dark)' },
       { url: '/icon.svg', type: 'image/svg+xml' },
     ],
-    apple: '/apple-icon.png',
   },
 }
 
